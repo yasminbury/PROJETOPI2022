@@ -23,6 +23,16 @@ namespace PROJETOPI2022.Controllers
             return View();
         }
 
+        public IActionResult Carro()
+        {
+            return View();
+        }
+
+        public IActionResult Equipe()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
