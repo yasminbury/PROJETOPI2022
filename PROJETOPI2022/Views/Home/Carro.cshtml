@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Carro";
+}
+<h1>@ViewData["Title"]</h1>
+
+<html>
+<head>
+    <title class="">Customer Form</title>
+</head>
+<body>
+    
+
+        <div class="main-carro" >
+        <div class="row">
+            <div class="col p-0">
+                <button type="button" class="collapsible">Constante K</button>
+                <div class="input-container-calculos ic1">
+                    <label for="constF">Constante F:</label>
+                    <input required type="number" id="constF" name="constF" class="input">
+
+                    <label for="constd">Constante d:</label><br />
+                    <input type="number" id="constd" name="constd" required class="input">
+
+
+                    <label for="constD">Constante D:</label><br />
+                    <input type="number" id="constD" name="constD" required class="input"><br />
+
+                    <button class="button-34" role="button">Calcular</button><br /><br />
+
+                    <label for="constk">Resultado constante k:</label><br />
+                    <input type="number" id="constD" name="constD" value="" required class="input"><br />
+                </div>
+            </div>
+
+            <div class="col p-0">
+                <button type="button" class="collapsible">Angulo Alfa</button>
+                <div class="input-container-calculos ic1">
+                    <label for="cateto">Cateto oposto (CO):</label><br />
+                    <input type="number" id="cateto" name="cateto" required class="input">
+                    <label for="hipostenusa">Hipotenusa:</label><br />
+                    <input type="number" id="hipotenusa" name="hipotenusa" required class="input">
+                
+              
+                <button class="button-34" role="button" onclick="{calcularAlfa}">Calcular</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+
+</html>

@@ -1,0 +1,83 @@
+﻿@page
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="font-color-login">@ViewData["Title"]</h1>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+     <div class="main-equipe" >
+    <div class="row">
+         <div class="col p-0">
+            <button type="button" class="collapsible" style="width: 100%; margin: 0 auto;">Integrante 1</button>
+            <div class="input-container ic1">
+                <input required type="text" id="int1" name="nome" class="input" placeholder="Nome">
+                <input required type="text" id="int1" name="login" class="input" placeholder="Login">
+                <input required type="password" id="int1" name="senha" class="input" placeholder="Senha">
+         <button class="button-34" role="button">Salvar</button>
+         </div>
+         </div>
+       <div class="col p-0">
+        <button type="button" class="collapsible">Integrante 2</button>
+        <div class="input-container ic1">
+            <input required type="text" id="int1" name="constF" class="input" placeholder="Nome">
+            <input required type="text" id="int1" name="constF" class="input" placeholder="Login">
+            <input required type="password" id="int1" name="constF" class="input" placeholder="Senha">
+            <button class="button-34" role="button">Salvar</button>
+       
+    </div>
+   </div>
+   <div class="col p-0">
+    <button type="button" class="collapsible">Integrante 3</button>
+    <div class="input-container ic1">
+        <input required type="text" id="int1" name="constF" class="input" placeholder="Nome">
+        <input required type="text" id="int1" name="constF" class="input" placeholder="Login">
+        <input required type="password" id="int1" name="constF" class="input" placeholder="Senha">
+        <button class="button-34" role="button">Salvar</button>
+    
+    </div>
+    </div>
+    <div class="col p-0">
+    <button type="button" class="collapsible">Integrante 4</button>
+    <div class="input-container ic1">
+        <input required type="text" id="int1" name="constF" class="input" placeholder="Nome">
+        <input required type="text" id="int1" name="constF" class="input" placeholder="Login">
+        <input required type="password" id="int1" name="constF" class="input" placeholder="Senha">
+        <button class="button-34" role="button">Salvar</button>
+
+    
+    </div>
+     </div>
+    </div>
+ 
+    </div>
+       
+    
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+
+</body>
+</html>
+
+
